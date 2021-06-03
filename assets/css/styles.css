@@ -1,0 +1,127 @@
+/**** @Author: Francisco Zapata ****/
+
+
+/** Reset the document **/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/** Custom Properties **/
+
+:root {
+    --white: #fff;
+    --grey1: #ababab;
+    --grey2: #919191;
+    --grey3: #5e5e5e;
+    --grey4: #191A1D;
+    --grey5: #121316;
+    --black: #000;
+    --blue1: #4B6CC1;
+}
+
+
+/** Globals **/
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+/** Header **/
+
+.header {
+    background-color: var(--grey4);
+    padding: 3rem 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color: var(--white);
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+}
+
+.menu-collapsed {
+    color: var(--white);
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.menu-nav {
+    display: none;
+}
+
+.menu-nav a {
+    color: var(--grey1);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+}
+
+.menu-nav a:hover {
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .menu-collapsed {
+        display: none;
+    }
+    .menu-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+}
+
+
+/** Hero **/
+
+.hero {}
+
+
+/** Projects **/
+
+.projects {
+    background-color: var(--grey4);
+}
+
+.under {
+    text-align: center;
+    margin-top: 5rem;
+}
